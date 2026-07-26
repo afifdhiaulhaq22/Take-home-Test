@@ -66,9 +66,3 @@ API Testing : Playwright APIRequest
 Design Pattern : Page Object Model
 CI/CD : GitHub Actions
 Runtime : Node.js 26.1.1
-
-
-
----
-
-# Struktur Project
