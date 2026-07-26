@@ -1,7 +1,7 @@
 const {test, expect} = require('@playwright/test');
 
 const APIClient = require('../../api/apiClient');
-const BookingAPI = require('../../api/BookingAPI');
+const BookingAPI = require('../../api/bookingApi');
 
 const bookingData = require('../../api/bookingData.json');
 
