@@ -1,0 +1,42 @@
+{
+  "expectedProductCount": 6,
+
+  "sorting": {
+    "nameAZ": {
+      "option": "az",
+      "description": "Name (A to Z)"
+    },
+    "nameZA": {
+      "option": "za",
+      "description": "Name (Z to A)"
+    },
+    "priceLowHigh": {
+      "option": "lohi",
+      "description": "Price (low to high)"
+    },
+    "priceHighLow": {
+      "option": "hilo",
+      "description": "Price (high to low)"
+    }
+  },
+
+  "addToCart": {
+    "singleProduct": {
+      "description": "Tambah 1 produk",
+      "products": [
+        "sauce-labs-backpack"
+      ],
+      "expectedCartBadge": "1"
+    },
+
+    "multipleProducts": {
+      "description": "Tambah 3 produk",
+      "products": [
+        "sauce-labs-backpack",
+        "sauce-labs-bike-light",
+        "sauce-labs-bolt-t-shirt"
+      ],
+      "expectedCartBadge": "3"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "verifyCartItems": {
+    "description": "Verify cart items match selected products",
+    "products": [
+      {
+        "id": "sauce-labs-backpack",
+        "name": "Sauce Labs Backpack"
+      },
+      {
+        "id": "sauce-labs-bike-light",
+        "name": "Sauce Labs Bike Light"
+      },
+      {
+        "id": "sauce-labs-bolt-t-shirt",
+        "name": "Sauce Labs Bolt T-Shirt"
+      }
+    ],
+    "expectedItemCount": 3
+  },
+
+  "removeItem": {
+    "description": "Remove item from cart",
+    "product": {
+      "id": "sauce-labs-backpack",
+      "name": "Sauce Labs Backpack"
+    },
+    "expectedItemCountBefore": 1,
+    "expectedItemCountAfter": 0
+  },
+
+  "checkout": {
+    "description": "Proceed to checkout",
+    "product": {
+      "id": "sauce-labs-backpack",
+      "name": "Sauce Labs Backpack"
+    },
+    "expectedUrl": "/checkout-step-one/",
+    "expectedTitle": "Checkout: Your Information"
+  }
+}

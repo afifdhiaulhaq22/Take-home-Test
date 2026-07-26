@@ -1,0 +1,29 @@
+{
+  "validCustomer": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "postalCode": "12345",
+    "expectedUrl": "/checkout-step-two.html"
+  },
+
+  "emptyFirstName": {
+    "firstName": "",
+    "lastName": "Doe",
+    "postalCode": "12345",
+    "expectedError": "Error: First Name is required"
+  },
+
+  "emptyLastName": {
+    "firstName": "John",
+    "lastName": "",
+    "postalCode": "12345",
+    "expectedError": "Error: Last Name is required"
+  },
+
+  "emptyPostalCode": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "postalCode": "",
+    "expectedError": "Error: Postal Code is required"
+  }
+}

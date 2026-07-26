@@ -1,0 +1,30 @@
+{
+  "verifyItems": {
+    "products": [
+      {
+        "id": "sauce-labs-backpack",
+        "name": "Sauce Labs Backpack"
+      },
+      {
+        "id": "sauce-labs-bike-light",
+        "name": "Sauce Labs Bike Light"
+      }
+    ],
+    "expectedItemCount": 2
+  },
+
+  "verifySummary": {
+    "expectedSubtotalLabel": "Item total:",
+    "expectedTaxLabel": "Tax:",
+    "expectedTotalLabel": "Total:"
+  },
+
+  "finishCheckout": {
+    "expectedUrl": "/checkout-complete.html",
+    "expectedTitle": "Checkout: Complete!"
+  },
+
+  "cancelCheckout": {
+    "expectedUrl": "/inventory.html"
+  }
+}
