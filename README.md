@@ -99,3 +99,11 @@ Untuk memastikan test dapat dijalankan berulang dengan hasil yang sama:
 - Konfigurasi environment dikelola melalui Playwright configuration.
 - Dependency dan runtime version dikunci melalui package.json dan package-lock.json.
 - CI pipeline menggunakan environment yang sama setiap kali test dijalankan.
+
+# Test Report
+
+Automation test report dibuat menggunakan Playwright HTML Reporter.
+
+Latest execution:
+<img width="1022" height="618" alt="image" src="https://github.com/user-attachments/assets/18a03ff0-83bf-429b-affa-06aeb41141fd" />
+
