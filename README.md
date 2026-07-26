@@ -66,3 +66,36 @@ API Testing : Playwright APIRequest
 Design Pattern : Page Object Model
 CI/CD : GitHub Actions
 Runtime : Node.js 26.1.1
+
+# Rencana Pengujian
+
+# Prioritas Pengujian
+
+Fokus utama pengujian adalah memastikan fungsi bisnis utama berjalan dengan stabil.
+
+Prioritas:
+- Validasi authentication flow pada UI.
+- Validasi proses utama pengguna seperti checkout.
+- Validasi API utama seperti create dan retrieve booking.
+- Validasi error handling dan input validation.
+
+
+# Teknik Desain Test
+
+Teknik yang digunakan:
+
+- Page Object Model (POM) untuk UI automation agar struktur test mudah dipelihara.
+- Data Driven Testing untuk menjalankan scenario dengan variasi data.
+- Positive dan Negative Testing untuk memastikan sistem menangani kondisi berhasil maupun gagal.
+- Schema Validation untuk memastikan kontrak response API tetap sesuai.
+
+
+# Konsistensi Data dan Environment
+
+Untuk memastikan test dapat dijalankan berulang dengan hasil yang sama:
+
+- Test data dipisahkan dari test logic menggunakan file JSON.
+- Setiap test dibuat independen dan tidak bergantung pada hasil test lain.
+- Konfigurasi environment dikelola melalui Playwright configuration.
+- Dependency dan runtime version dikunci melalui package.json dan package-lock.json.
+- CI pipeline menggunakan environment yang sama setiap kali test dijalankan.
